@@ -7,7 +7,6 @@ using FiveToSeven.Services.MinichOne;
 using FiveToSeven.Services.MinichThree;
 using FiveToSeven.Services.MinichTwo;
 using FiveToSeven.Services.Numeric;
-using FiveToSeven.Services.RestaurantPService;
 using FiveToSeven.Services.SayHello;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,7 +26,6 @@ builder.Services.AddScoped<IMinich7Service, Minich7Service>();
 builder.Services.AddScoped<INumericService, NumericService>();
 builder.Services.AddScoped<IMinich9Service, Minich9Service>();
 builder.Services.AddScoped<IMinich10Service, Minich10Service>();
-builder.Services.AddScoped<IRestaurantPService, RestaurantPService>();
 builder.Services.AddScoped<IGreaterThanOrLessThanService, GreaterThanOrLessThanService>();
 var app = builder.Build();
 
